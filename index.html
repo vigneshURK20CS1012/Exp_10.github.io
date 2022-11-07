@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-align: center;
+            color: blue;
+        }
+        .outerdiv{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 400px;
+            /* background-color: red; */
+        }
+    </style>
+    <title>Welcome page</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <div class="outerdiv">
+        <form action="/server" method="post">
+            <span>Name:<span style="color: red;">*</span> </span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <input type="text" name="username"><br><br>
+            <span>Password:<span style="color: red;">*</span> </span>&ensp;&ensp;&ensp;&ensp;&ensp;
+            <input type="password" name="password"><br><br>
+            <span>Age:<span style="color: red;">*</span> </span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <input type="number" name="age"><br><br>
+            <span>Mobile Number:<span style="color: red;">*</span> </span><input type="number" name="number"><br><br>
+            <span>Email:<span style="color: red;">*</span> </span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <input type="email" name="email"><br><br>
+            <span>Gender:<span style="color: red;">*</span> </span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <label><input type="radio" name="gender" value="Male">Male</label>
+            <input type="radio" name="gender" value="Female">Female <br><br>
+            <span>State:<span style="color: red;">*</span> </span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <select name="state" id="state">
+                <option value="Kerala">Kerala</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+            </select><br><br>
+            <span>Skills:<span style="color: red;">*</span> </span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <input type="checkbox" name="skills1" value="Javascript">Javascript
+            <input type="checkbox" name="skills2" value="python">Python
+            <input type="checkbox" name="skills3" value="C++">c++
+            <input type="checkbox" name="skills4" value="Java">Java <br><br><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
